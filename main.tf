@@ -2,7 +2,7 @@ terraform {
 	backend "s3" {
 	 bucket = "mybucket-kondalu-19882021"
 	 key = "myapp/dev/terraform.tfstate"
-	 region = var.region
+	 region = "us-east-1"
 	}
 }
 
