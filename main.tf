@@ -5,7 +5,7 @@ terraform {
 	 region = "us-east-1"
 	}
 }
-# variables
+# variable
 variable "region" {
 	default = "us-east-1"
 }
