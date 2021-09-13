@@ -19,7 +19,7 @@ jobs:
       id: Bridgecrew
       uses: bridgecrewio/bridgecrew-action@master
       with:
-         api-key: ${{ secrets.BRIDGECREW_API_KEY }}  # added key
+         api-key: ${{ secrets.BRIDGECREW_API_KEY }}  # added keys
          directory: "."
          #check: CKV_AWS_1 # optional: run only a specific check_id. can be comma separated list 
          #skip_check: CKV_AWS_1 # optional: skip a specific check_id. can be comma separated list
@@ -27,7 +27,7 @@ jobs:
          framework: terraform # optional: run only on a specific infrastructure {cloudformation,terraform,kubernetes,all}
          output_format: cli
          quiet: false
-         #external_checks_dir: ./checkov
+         external_checks_dir: ./checkov
          download_external_modules: true # optional: download external terraform modules from public git repositories and terraform registry
          log_level: DEBUG # optional: set log level. Default WARNING
 
